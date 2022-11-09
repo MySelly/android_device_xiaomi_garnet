@@ -31,6 +31,26 @@ on boot
     chmod 0700 /sys/bus/platform/devices/soc:fingerprint_fpc/screen
     chmod 0666 /dev/input/event2
 
+    chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
+    chmod 0660 /sys/class/drm/sde-crtc-0/measured_fps
+    chown system system /sys/class/power_supply/battery/temp
+    chmod 0660 /sys/class/power_supply/battery/temp
+
+    # Workarround for cache
+    rm /data/resource-cache
+    rm /data/system/package_cache
+
+    # GPU 
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_clock_mhz
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_clock_mhz
+ 
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/max_clock_mhz
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/min_clock_mhz
+ 
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
     mkdir /data/vendor/misc/mi_fp 0770 system system
