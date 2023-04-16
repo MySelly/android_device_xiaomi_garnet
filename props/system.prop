@@ -26,3 +26,13 @@ telephony.lteOnCdmaDevice=1
 
 persist.vendor.vonr_setting_support=1
 persist.sys.radio.force_lte_ca=true
+
+# Radio Powersaving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=100
+ro.vold.umsdirtyratio=20
+power.saving.mode=1
