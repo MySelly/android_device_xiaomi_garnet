@@ -50,3 +50,4 @@ allow system_app vendor_sysfs_kgsl:lnk_file read;
 
 # Parts
 allow system_app sysfs_thermal:file write;
+allow system_app sysfs_thermal:file rw_file_perms;
