@@ -159,6 +159,11 @@ vendor.gralloc.disable_ubwc=0
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
+debug.sdm.support_writeback=0
+ro.surface_flinger.support_kernel_idle_timer=true
 
 # HWUI
 debug.hwui.use_hint_manager=true
