@@ -53,3 +53,15 @@ ro.config.sdha_apps_bg_min=8
 
 # Disable default frame rate limit for games
 debug.graphics.game_default_frame_rate.disabled=1
+
+# OIS fix
+persist.camera.gyro.android=20
+persist.camera.HAL3.enabled=1
+persist.camera.is_type=4
+persist.camera.ois.enable=1
+persist.camera.ois.video=1
+persist.vendor.camera.ois.enable=1
+persist.vendor.camera.ois.video=1
+
+# System Server
+persist.arm64.memtag.system_server=off
