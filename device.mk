@@ -359,9 +359,6 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libcodec2_hidl@1.2.vendor
-
-PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail_vendor
 
