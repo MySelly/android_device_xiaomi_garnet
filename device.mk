@@ -544,7 +544,9 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libhidlbase_shim
+    libhidlbase_shim \
+    libinput_shim \
+    libgui_shim
 
 # WiFi
 PRODUCT_PACKAGES += \
