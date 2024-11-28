@@ -45,15 +45,35 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             Log.d(TAG, "Received boot completed intent");
         DozeUtils.onBootCompleted(context);
         ThermalUtils.startService(context);
-        RefreshUtils.startService(context);    
-        
+        RefreshUtils.startService(context);
+
         // Touch Sampling
         boolean HTSREnabled = sharedPrefs.getBoolean(HTSR_ENABLE_KEY, false);
         FileUtils.writeLine(HTSR_FILE, HTSREnabled ? "1" : "0");
+
+        if (DEBUG) Log.i(TAG, "Received intent: " + intent.getAction());
+        switch (intent.getAction()) {
+            case Intent.ACTION_LOCKED_BOOT_COMPLETED:
+                onLockedBootCompleted(context);
+                break;
+            case Intent.ACTION_BOOT_COMPLETED:
+                onBootCompleted(context);
+                break;
+        }
+    }
+
+    private static void onLockedBootCompleted(Context context) {
+            ThermalUtils.startService(context);
+            RefreshUtils.startService(context);
+            overrideHdrTypes(context);
+    }
 
         // DC Dimming
         FileUtils.enableService(context);
         boolean dcDimmingEnabled = sharedPrefs.getBoolean(DC_DIMMING_ENABLE_KEY, false);
         FileUtils.writeLine(DC_DIMMING_NODE, dcDimmingEnabled ? "1" : "0");
+    }
+
+    private static void onBootCompleted(Context context) {
     }
 }
