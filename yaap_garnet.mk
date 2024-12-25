@@ -8,22 +8,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common DerpFest stuff.
+# Inherit some common Device stuff.
 $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
-# Derp Stuff
+# Device Stuff
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
-
-# Derpfest
-DERP_BUILDTYPE := Official
-
-#GApps
-TARGET_USES_PICO_GAPPS := true
 
 PRODUCT_NAME := yaap_garnet
 PRODUCT_DEVICE := garnet
