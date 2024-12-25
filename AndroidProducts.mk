@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_garnet.mk
+    $(LOCAL_DIR)/yaap_garnet.mk
