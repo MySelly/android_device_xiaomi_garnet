@@ -610,3 +610,7 @@ TARGET_HAS_UDFPS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := parrot
+
+# Viperfx
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
