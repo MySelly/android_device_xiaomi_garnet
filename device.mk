@@ -429,7 +429,8 @@ PRODUCT_PACKAGES += \
     WifiOverlayGarnetPoco \
     WifiOverlayGarnetRedmi \
     WifiOverlayGarnetRedmiCN \
-    WifiOverlayGarnetXIG05
+    WifiOverlayGarnetXIG05 \
+    NcmTetheringOverlay
 
 # Parts
 PRODUCT_PACKAGES += \
