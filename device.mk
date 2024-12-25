@@ -616,3 +616,7 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Bcr
 $(call inherit-product, vendor/bcr/bcr.mk)
+
+# Sign keys
+-include vendor/lineage-priv/keys/keys.mk
+
