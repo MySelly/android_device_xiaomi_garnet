@@ -605,3 +605,6 @@ PRODUCT_BOOT_JARS += \
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
 
+# UDFPS
+TARGET_HAS_UDFPS := true
+
