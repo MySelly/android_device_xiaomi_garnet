@@ -307,6 +307,9 @@ PRODUCT_PACKAGES += \
     WifiOverlayGarnetRedmiCN \
     WifiOverlayGarnetXIG05
 
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
