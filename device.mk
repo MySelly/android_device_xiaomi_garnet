@@ -616,3 +616,8 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Bcr
 $(call inherit-product, vendor/bcr/bcr.mk)
+
+# FRP
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.frp.pst=
+
