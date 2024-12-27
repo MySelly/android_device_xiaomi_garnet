@@ -23,6 +23,3 @@ DEVICE_PROVISIONED=1
 ril.subscription.types=NV,RUIM
 ro.telephony.default_network=33,33
 telephony.lteOnCdmaDevice=1
-
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
