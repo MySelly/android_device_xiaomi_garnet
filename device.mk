@@ -613,7 +613,3 @@ TARGET_BOARD_PLATFORM := parrot
 
 # Viperfx
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
-# Bcr
-$(call inherit-product, vendor/bcr/bcr.mk)
-
