@@ -506,6 +506,10 @@ on property:persist.vendor.sys.rawdump_copy=0
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm_enabled
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm_enabled
 
+    # Allow systemto modify High Touch Sampling Rate
+    chown system system /sys/devices/virtual/touch/touch_dev/bump_sample_rate
+    chmod 0660 /sys/devices/virtual/touch/touch_dev/bump_sample_rate
+
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
     #Enable UFS clock scaling back
