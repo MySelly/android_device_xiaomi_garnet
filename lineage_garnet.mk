@@ -37,3 +37,9 @@ PRODUCT_SYSTEM_DEVICE := garnet
 BUILD_FINGERPRINT := Redmi/garnet_global/garnet:14/UKQ1.231003.002/V816.0.15.0.UNRMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+SAKURA_MAINTAINER := mysellysenpai
+SAKURA_BUILD_TYPE := gapps
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
