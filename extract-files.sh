@@ -67,6 +67,17 @@ function blob_fixup() {
         vendor/etc/init/hw/init.batterysecret.rc|vendor/etc/init/hw/init.mi_thermald.rc|vendor/etc/init/hw/init.qti.kernel.rc)
             sed -i 's/on charger/on property:init.svc.vendor.charger=running/g' "${2}"
             ;;
+        vendor/etc/seccomp_policy/atfwd@2.0.policy | vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy | vendor/etc/seccomp_policy/wfdhdcphalservice.policy)
+            [ "$2" = "" ] && return 0
+            case "$1" in
+        vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy)
+            grep -q "setsockopt: 1" "${2}" || { sed -i -e '$a\setsockopt: 1' "${2}"; }
+            ;;
+        vendor/etc/seccomp_policy/atfwd@2.0.policy | vendor/etc/seccomp_policy/wfdhdcphalservice.policy)
+            grep -q "gettid: 1" "${2}" || { sed -i -e '$a\gettid: 1' "${2}"; }
+            ;;
+            esac
+            ;;
         vendor/etc/media_codecs_parrot_v0.xml)
         vendor/etc/seccomp_policy/atfwd@2.0.policy)
             [ "$2" = "" ] && return 0
