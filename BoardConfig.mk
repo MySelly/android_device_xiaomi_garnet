@@ -253,3 +253,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Vendor
 include vendor/xiaomi/garnet/BoardConfigVendor.mk
+
+TARGET_DISABLE_EPPE := true
