@@ -611,3 +611,5 @@ TARGET_HAS_UDFPS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := parrot
+
+
