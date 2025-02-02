@@ -114,10 +114,7 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy': blob_fixup()
         .add_line_if_missing('setsockopt: 1'),
     'vendor/etc/media_codecs_parrot_v0.xml': blob_fixup()
-        .regex_replace(r'.+media_codecs_(google_audio|google_c2|google_telephony).+\n', '')
-        .regex_replace('media_codecs_vendor_audio', 'media_codecs_dolby_audio'),
-    'vendor/etc/media_codecs_c2_audio.xml': blob_fixup()
-        .regex_replace('.+media_codecs_dolby_audio.+\n', ''),
+        .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
     'vendor/etc/perf/commonresourceconfigs.xml': blob_fixup()
