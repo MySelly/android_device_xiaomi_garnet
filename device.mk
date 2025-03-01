@@ -188,7 +188,6 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor:64 \
-    android.hardware.drm-service.clearkey:64 \
     libcrypto_shim.vendor:64
 
 # Device-specific settings
@@ -509,7 +508,10 @@ PRODUCT_COPY_FILES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
     android.hardware.thermal-service.qti \
+=======
+>>>>>>> 126ac09 (garnet: Drop some offending entries)
     android.hardware.thermal@2.0.vendor
 
 # Touchscreen
