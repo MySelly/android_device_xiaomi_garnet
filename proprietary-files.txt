@@ -1522,8 +1522,8 @@ vendor/lib64/vendor.qti.hardware.limits@1.0.so
 vendor/lib64/vendor.qti.hardware.limits@1.1.so
 
 # Media
-vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
+vendor/bin/hw/vendor.qti.media.c2@1.0-service|5ff2d53e9306c7d4c560c440a42c8bfac661fedc
+vendor/bin/hw/vendor.qti.media.c2audio@1.0-service|7cb1e3351c079af3b99f97b4335b2df62d2030f7
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
 vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy
