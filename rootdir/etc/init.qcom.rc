@@ -68,8 +68,6 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
-on post-fs
-
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
@@ -230,6 +228,10 @@ on boot
 
     # Modem set for redirect modem log to /sdcard/Xiaomi/diag_logs/
     setprop persist.logd.diag.newlocation 1
+
+on post-fs
+    # Apply dolby fix
+    start init-dolby_fix-sh
 
 # msm specific files that need to be created on /data
 on post-fs-data
@@ -427,6 +429,12 @@ service qcomsysd /system/vendor/bin/qcom-system-daemon
     user root
     group root diag oem_2901
     disabled
+
+service init-dolby_fix-sh /vendor/bin/init.dolby_fix.sh
+    class main
+    user system
+    group system
+    oneshot 
 
 on property:persist.vendor.qcomsysd.enabled=1
     enable qcomsysd
