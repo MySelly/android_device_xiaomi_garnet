@@ -325,6 +325,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light-V1-ndk_platform.vendor
 
 # Lineage Health
+$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
+
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
