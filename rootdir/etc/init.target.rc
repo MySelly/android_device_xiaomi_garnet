@@ -281,6 +281,7 @@ on property:ro.product.name=garnet_global && property:ro.product.mod_device=garn
 
 on property:ro.product.mod_device=garnet_jp_kd_global
    setprop ro.vendor.miui.support_esim true
+   setprop ro.vendor.miui.esim_mode 1
 
 on property:ro.product.name=garnet_global && property:ro.product.mod_device=garnet_lm_cr_global
    setprop ro.vendor.miui.support_esim true
@@ -294,6 +295,7 @@ on property:ro.product.name=garnet_global && property:ro.product.mod_device=garn
 
 on property:ro.product.mod_device=garnet_pre_jp_kd_global
    setprop ro.vendor.miui.support_esim true
+   setprop ro.vendor.miui.esim_mode 1
 
 on property:ro.product.name=garnet_global && property:ro.product.mod_device=garnet_pre_lm_cr_global
    setprop ro.vendor.miui.support_esim true
