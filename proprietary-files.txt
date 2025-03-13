@@ -1175,6 +1175,30 @@ vendor/lib64/librpmb.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
+# Dolby Sound from Sony Xperia V5 (pdx237)
+system_ext/etc/permissions/privapp-com.dolby.daxservice.xml|7e83188fe32e6210de8d943b328893a32531c98d
+system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|f647356bd3a4bb4174e873e4544c2921d51fd4d2
+system_ext/etc/sysconfig/config-com.dolby.daxappui2.xml|c3454432d09b9daacf753b6d42dfdc445563401b
+system_ext/priv-app/daxService/daxService.apk|4b1f3f2fa9ddb51e4138bf57a64d585f4dd0b1a7
+system_ext/priv-app/DolbySound/DolbySound.apk|a5668938a5321bb83e1ba43463d5fdfc769366f2
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|76fe11bc5778d47f6f88f2233b6b2b2022733241
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/etc/dolby/dax-default.xml|3a4cbe8dcca53bb46e0f09b8eea8d8bd8e26470c
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|59ba0b46c622f28e34f49a334c4cfe6d4bc34be6
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|1c6b82e7da2d3e6ba712f9c9e7f96178280361de
+vendor/lib64/libdapparamstorage.so|a09b0b02ed61e96e6760102ed6c85c89e6b3f1a7
+vendor/lib64/libdeccfg.so|1a3392c530cb36c728a1cc1d18619c7444cde248
+vendor/lib64/libdlbdsservice.so|55d207fb29a382c44590389f54a43cafe4eaccf4|55d207fb29a382c44590389f54a43cafe4eaccf4
+vendor/lib64/libdlbpreg.so|b0b04d860e6e57c30acd6196e7b539b8c6a0a189
+vendor/lib64/libcodec2_soft_ac4dec.so|528aff392e910eac5ccdd1cc4456349dafb72f98|528aff392e910eac5ccdd1cc4456349dafb72f98
+vendor/lib64/libcodec2_soft_ddpdec.so|21dae24f0799297fdeb018c4af82a9f25ac13aff|21dae24f0799297fdeb018c4af82a9f25ac13aff
+vendor/lib64/libcodec2_soft_dolby.so|21664a8695c4ea383a0ff112b6f1cc8dc128818f|21664a8695c4ea383a0ff112b6f1cc8dc128818f
+vendor/lib64/libcodec2_store_dolby.so|37dab034d10c78443b0cdb16df62a0664c53c4eb
+vendor/lib64/soundfx/libdlbvol.so|64b21692cc6bb65e70deef4ef3768f5547ac75f9
+vendor/lib64/soundfx/libswdap.so|9cbad9081060ac1fd7ca90cb0e89a3399cabc855
+vendor/lib64/soundfx/libswgamedap.so|6be673e25f25f8f2013b5785725016802e8eced8
+vendor/lib64/soundfx/libswvqe.so|23f22eb9ae81e1f8789a81808794a0c2fdc88137
+
 # DSP
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
@@ -1511,8 +1535,6 @@ vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
 vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy
 vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
-vendor/etc/vintf/manifest/c2_manifest_vendor.xml
-vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libEvrcSwCodec.so

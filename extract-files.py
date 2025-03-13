@@ -69,6 +69,9 @@ blob_fixups: blob_fixups_user_type = {
          .replace_needed('libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
         .replace_needed('vendor.qti.hardware.display.config-V2-ndk_platform.so', 'vendor.qti.hardware.display.config-V2-ndk.so'),
+    ('vendor/lib64/libdlbdsservice.so', 'vendor/lib64/libcodec2_soft_ac4dec.so', 'vendor/lib64/libcodec2_soft_ddpdec.so', 'vendor/lib64/libcodec2_soft_dolby.so'): blob_fixup()
+        .patchelf_version('0_17_2')
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     (
         'vendor/bin/hw/android.hardware.security.keymint-service-qti',
         'vendor/lib/libqtikeymint.so',
@@ -105,9 +108,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy': blob_fixup()
         .add_line_if_missing('setsockopt: 1'),
     'vendor/etc/media_codecs_parrot_v0.xml': blob_fixup()
-        .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
-    'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
-        .regex_replace('.+dolby.+\n', ''),
+        .regex_replace(r'.+media_codecs_(google_audio|google_c2|google_telephony).+\n', '')
+        .regex_replace('media_codecs_vendor_audio', 'media_codecs_dolby_audio'),
     'vendor/etc/media_codecs_c2_audio.xml': blob_fixup()
         .regex_replace('.+media_codecs_dolby_audio.+\n', ''),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
