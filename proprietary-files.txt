@@ -1183,7 +1183,6 @@ system_ext/priv-app/daxService/daxService.apk|4b1f3f2fa9ddb51e4138bf57a64d585f4d
 system_ext/priv-app/DolbySound/DolbySound.apk|a5668938a5321bb83e1ba43463d5fdfc769366f2
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|76fe11bc5778d47f6f88f2233b6b2b2022733241
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
-vendor/etc/dolby/dax-default.xml|3a4cbe8dcca53bb46e0f09b8eea8d8bd8e26470c
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|59ba0b46c622f28e34f49a334c4cfe6d4bc34be6
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so|1c6b82e7da2d3e6ba712f9c9e7f96178280361de
 vendor/lib64/libdapparamstorage.so|a09b0b02ed61e96e6760102ed6c85c89e6b3f1a7
