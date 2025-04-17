@@ -12,6 +12,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Reduce overdraw debugging to improve performance
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwui.show_overdraw=false
+
+# Enable Vulkan for games and OpenGL Skia for the UI
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.force_vulkan=1 \
+    debug.hwui.renderer=skiagl
+
+# Ensures smoother rendering by turning off unnecessary GPU debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwui.show_overdraw=false
+
+# Reduces input lag and smoothens animations
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwui.use_triple_buffering=true \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
+# Disable scrolling cache for smoother scrolling
+persist.sys.scrollingcache=3
+
+# Keep the launcher in memory to reduce reload times
+ro.HOME_APP_ADJ=1
+
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
