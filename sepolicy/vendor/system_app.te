@@ -22,3 +22,9 @@ allow system_app vendor_sysfs_graphics:file { getattr open write };
 # HTSR
 allow system_app sysfs_htsr:file { read write open setattr getattr };
 allow system_app sysfs_htsr:dir { search open read };
+
+# Allow system_app to set ZRAM property
+set_prop(system_app, vendor_zram_prop)
+get_prop(system_app, vendor_zram_prop)
+set_prop(system_app, vendor_default_prop)
+get_prop(system_app, vendor_default_prop)

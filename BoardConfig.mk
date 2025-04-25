@@ -58,6 +58,7 @@ TARGET_PROVIDES_AUDIO_HAL = true
 TARGET_BOOTLOADER_BOARD_NAME := parrot
 TARGET_NO_BOOTLOADER := true
 
+
 # Display
 TARGET_SCREEN_DENSITY := 480
 
@@ -254,3 +255,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Vendor
 include vendor/xiaomi/garnet/BoardConfigVendor.mk
+
+SELINUX_IGNORE_NEVERALLOWS := true
