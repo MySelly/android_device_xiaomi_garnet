@@ -566,6 +566,10 @@ on property:vold.decrypt=trigger_restart_framework
     chown system system /proc/sys/vm/swappiness
     chmod 0660 /proc/sys/vm/swappiness
 
+    # Charge Bypass
+    chown system system /sys/class/qcom-battery/input_suspend
+    chmod 0660 /sys/class/qcom-battery/input_suspend
+
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     class core
     user vendor_qrtr
