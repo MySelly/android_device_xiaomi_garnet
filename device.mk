@@ -596,7 +596,5 @@ PRODUCT_PACKAGES += \
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
 
+# Sign Keys
 -include vendor/lineage-priv/keys/keys.mk
-
-# ViperFX
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
