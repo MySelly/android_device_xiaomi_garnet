@@ -32,6 +32,7 @@ import android.util.Log;
 import android.view.Display;
 import android.view.Display.HdrCapabilities;
 
+import org.lineageos.settings.powertools.PowerProfileTileService;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 
@@ -67,5 +68,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     }
 
     private static void onBootCompleted(Context context) {
+        // Start Power Profile Tile Service
+        context.startServiceAsUser(new Intent(context, PowerProfileTileService.class), UserHandle.CURRENT);
     }
 }

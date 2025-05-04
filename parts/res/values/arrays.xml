@@ -116,4 +116,124 @@
         <item>10000</item>
     </string-array>
 
+    <!-- GPU Frequency Options -->
+    <string-array name="gpu_frequency_entries" translatable="false">
+        <item>295MHz</item>
+        <item>345MHz</item>
+        <item>500MHz</item>
+        <item>600MHz</item>
+        <item>650MHz</item>
+        <item>734MHz</item>
+        <item>816MHz</item>
+        <item>875MHz</item>
+        <item>940MHz</item>
+    </string-array>
+
+    <string-array name="gpu_frequency_values" translatable="false">
+        <item>295000000</item>
+        <item>345000000</item>
+        <item>500000000</item>
+        <item>600000000</item>
+        <item>650000000</item>
+        <item>734000000</item>
+        <item>816000000</item>
+        <item>875000000</item>
+        <item>940000000</item>
+        </string-array>
+
+<!-- CPU Little Cluster Frequencies -->
+    <string-array name="cpu_little_freq_entries" translatable="false">
+        <item>691MHz</item>
+        <item>806MHz</item>
+        <item>940MHz</item>
+        <item>1113MHz</item>
+        <item>1324MHz</item>
+        <item>1497MHz</item>
+        <item>1651MHz</item>
+        <item>1804MHz</item>
+        <item>1958MHz</item>
+    </string-array>
+    <string-array name="cpu_little_freq_values" translatable="false">
+        <item>691200</item>
+        <item>806400</item>
+        <item>940800</item>
+        <item>1113800</item>
+        <item>1324800</item>
+        <item>1497800</item>
+        <item>1651000</item>
+        <item>1804200</item>
+        <item>1958400</item>
+    </string-array>
+
+<!-- CPU Big Cluster Frequencies -->
+    <string-array name="cpu_big_freq_entries" translatable="false">
+        <item>691MHz</item>
+        <item>883MHz</item>
+        <item>998MHz</item>
+        <item>1113MHz</item>
+        <item>1209MHz</item>
+        <item>1324MHz</item>
+        <item>1440MHz</item>
+        <item>1555MHz</item>
+        <item>1651MHz</item>
+        <item>1766MHz</item>
+        <item>1881MHz</item>
+        <item>1996MHz</item>
+        <item>2112MHz</item>
+        <item>2227MHz</item>
+        <item>2400MHz</item>
+    </string-array>
+    <string-array name="cpu_big_freq_values" translatable="false">
+        <item>691000</item>
+        <item>883200</item>
+        <item>998400</item>
+        <item>1113600</item>
+        <item>1209600</item>
+        <item>1324800</item>
+        <item>1440000</item>
+        <item>1555200</item>
+        <item>1651200</item>
+        <item>1766400</item>
+        <item>1881600</item>
+        <item>1996800</item>
+        <item>2112000</item>
+        <item>2227200</item>
+        <item>2400000</item>
+    </string-array>
+ 
+    <!-- CPU Governor Options (for all clusters) -->
+    <string-array name="cpu_governor_entries" translatable="false">
+         <item>walt</item>
+         <item>conservative</item>
+         <item>powersave</item>
+         <item>performance</item>
+         <item>schedutil</item>
+    </string-array>
+    <string-array name="cpu_governor_values" translatable="false">
+         <item>walt</item>
+         <item>conservative</item>
+         <item>powersave</item>
+         <item>performance</item>
+         <item>schedutil</item>
+    </string-array>
+
+    <!-- Power Profile Modes -->
+    <string-array name="power_profile_modes" translatable="false">
+         <item>Balanced</item>
+         <item>Gaming</item>
+         <item>Performance</item>
+         <item>Battery Saver</item>
+    </string-array>
+    <string-array name="power_profile_mode_values" translatable="false">
+         <item>0</item>
+         <item>1</item>
+         <item>2</item>
+         <item>3</item>
+         <item>4</item>
+    </string-array>
+    <string-array name="game_packages">
+    <item>com.supercell.brawlstars</item>
+    <item>com.miHoYo.GenshinImpact</item>
+    </string-array>
+
 </resources>

@@ -30,6 +30,8 @@ import java.util.Map;
 
 import org.lineageos.settings.gamebar.GameBarSettingsActivity;
 import org.lineageos.settings.gamebar.GameBarTileService;
+import org.lineageos.settings.powertools.PowerProfileTileService;
+import org.lineageos.settings.powertools.PowertoolsActivity;
 
 public final class TileHandlerActivity extends Activity {
     private static final String TAG = "TileHandlerActivity";
@@ -39,6 +41,7 @@ public final class TileHandlerActivity extends Activity {
 
     static {
         TILE_ACTIVITY_MAP.put(GameBarTileService.class.getName(), GameBarSettingsActivity.class);
+        TILE_ACTIVITY_MAP.put(PowerProfileTileService.class.getName(), PowertoolsActivity.class);
     }
 
     @Override
