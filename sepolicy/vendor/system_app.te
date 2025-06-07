@@ -32,3 +32,7 @@ get_prop(system_app, vendor_default_prop)
 # Charge Bypass
 allow system_app vendor_sysfs_battery_supply:dir search;
 allow system_app vendor_sysfs_battery_supply:file { getattr open read write };
+
+# Core Control
+allow system_app vendor_sysfs_corecontrol:dir search;
+allow system_app vendor_sysfs_corecontrol:file { getattr open read write };
