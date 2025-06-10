@@ -609,3 +609,9 @@ $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
 
 # Sign Keys
 -include vendor/lineage-priv/keys/keys.mk
+
+# ViperFX
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+
+# Bcr
+$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
