@@ -15,7 +15,7 @@
     <item name="pixel_pitch" format="float" type="dimen">56.96</item>
 
     <!-- Location on the screen of the center of the physical power button. -->
-    <dimen name="physical_power_button_center_screen_location_y">1175px</dimen>
+    <dimen name="physical_power_button_center_screen_location_y">1223px</dimen>
 
      <!-- Preferred max refresh rate at AOD & Ambient Display. -->
      <integer name="config_aodMaxRefreshRate">30</integer>
