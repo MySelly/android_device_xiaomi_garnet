@@ -21,6 +21,9 @@
          far break points. A sensor value less than this is considered "near". -->
     <item name="proximity_sensor_threshold" translatable="false" format="float" type="dimen">5</item>
 
+    <!-- Location on the screen of the center of the physical power button. -->
+    <dimen name="physical_power_button_center_screen_location_y">1223px</dimen>
+
      <!-- Preferred max refresh rate at AOD & Ambient Display. -->
      <integer name="config_aodMaxRefreshRate">30</integer>
   
