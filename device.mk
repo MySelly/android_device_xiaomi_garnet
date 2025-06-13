@@ -308,13 +308,6 @@ PRODUCT_PACKAGES += \
     libkeymaster_messages.vendor:64
 
 # Keymint
-PRODUCT_PACKAGES += \
-    android.hardware.hardware_keystore.xml:64 \
-    android.hardware.security.keymint-V1-ndk_platform.vendor:64 \
-    android.hardware.security.rkp-V3-ndk.vendor:64 \
-    android.hardware.security.secureclock-V1-ndk_platform.vendor:64 \
-    android.hardware.security.sharedsecret-V1-ndk_platform.vendor:64
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
