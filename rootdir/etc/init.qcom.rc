@@ -609,6 +609,25 @@ on property:vold.decrypt=trigger_restart_framework
     chmod 0664 /sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq
     chmod 0664 /sys/devices/system/cpu/cpufreq/policy7/scaling_max_freq
 
+    # GPU Manager
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/governor
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
+    chown system system /sys/class/kgsl/kgsl-3d0/force_clk_on
+    chown system system /sys/class/kgsl/kgsl-3d0/force_bus_on
+    chown system system /sys/class/kgsl/kgsl-3d0/force_rail_on
+    chown system system /sys/class/kgsl/kgsl-3d0/force_no_nap
+    chown system system /sys/class/kgsl/kgsl-3d0/bus_split
+
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/governor
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/force_clk_on
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/force_bus_on
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/force_rail_on
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/force_no_nap
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/bus_split
+
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     class core
     user vendor_qrtr

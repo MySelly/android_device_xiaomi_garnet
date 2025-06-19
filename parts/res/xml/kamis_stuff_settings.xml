@@ -26,4 +26,10 @@
         android:summary="@string/kernel_manager_summary"
         android:icon="@drawable/ic_kernel_manager" />
 
+    <Preference
+        android:key="gpu_manager"
+        android:title="@string/gpu_manager_title"
+        android:summary="@string/gpu_manager_summary"
+        android:icon="@drawable/ic_gpu_manager" />
+
 </PreferenceScreen>

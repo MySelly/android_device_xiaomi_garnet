@@ -82,6 +82,11 @@
     	    android:label="@string/kernel_manager_title"
     	    android:exported="false" />
 
+	<activity
+    	    android:name=".gpumanager.GpuManagerActivity"
+    	    android:label="@string/gpu_manager_title"
+    	    android:exported="false" />
+
         <activity
             android:name=".doze.DozeSettingsActivity"
             android:label="@string/ambient_display_title">
