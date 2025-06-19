@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/kamis_stuff_title">
+
+    <Preference
+        android:key="core_control"
+        android:title="@string/core_control_title"
+        android:summary="@string/core_control_summary"
+        android:icon="@drawable/ic_cpu" />
+
+    <Preference
+        android:key="bypass_charge"
+        android:title="@string/charge_bypass_title"
+        android:summary="@string/charge_bypass_summary"
+        android:icon="@drawable/ic_fast_charge" />
+
+    <Preference
+        android:key="zram"
+        android:title="@string/zram_size_title"
+        android:summary="@string/zram_summary"
+        android:icon="@drawable/ic_zram" />
+
+</PreferenceScreen>

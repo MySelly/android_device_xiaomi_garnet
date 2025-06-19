@@ -110,4 +110,9 @@
     <string name="core_5">Core 5 (Big)</string>
     <string name="core_6">Core 6 (Big)</string>
     <string name="core_7">Core 7 (Prime)</string>
+
+    <!-- Kamis Stuff -->
+    <string name="kamis_stuff_title">Kamis Stuff</string>
+    <string name="kamis_stuff_summary">Bricking Time!</string>
+
 </resources>
