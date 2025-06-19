@@ -77,6 +77,11 @@
             android:label="@string/core_control_title"
             android:exported="false" />
 
+	<activity
+    	    android:name=".kernelmanager.KernelManagerActivity"
+    	    android:label="@string/kernel_manager_title"
+    	    android:exported="false" />
+
         <activity
             android:name=".doze.DozeSettingsActivity"
             android:label="@string/ambient_display_title">

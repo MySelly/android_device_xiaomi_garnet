@@ -36,3 +36,7 @@ allow system_app vendor_sysfs_battery_supply:file { getattr open read write };
 # Core Control
 allow system_app vendor_sysfs_corecontrol:dir search;
 allow system_app vendor_sysfs_corecontrol:file { getattr open read write };
+
+# Kernel Manager
+allow system_app sysfs_devices_system_cpu:file { open read write };
+allow system_app sysfs_devices_system_cpu:dir search;

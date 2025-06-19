@@ -20,4 +20,10 @@
         android:summary="@string/zram_summary"
         android:icon="@drawable/ic_zram" />
 
+    <Preference
+        android:key="kernel_manager"
+        android:title="@string/kernel_manager_title"
+        android:summary="@string/kernel_manager_summary"
+        android:icon="@drawable/ic_kernel_manager" />
+
 </PreferenceScreen>

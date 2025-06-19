@@ -24,12 +24,14 @@ import org.lineageos.settings.R;
 import org.lineageos.settings.corecontrol.CoreControlActivity;
 import org.lineageos.settings.charge.ChargeActivity;
 import org.lineageos.settings.zram.ZramActivity;
+import org.lineageos.settings.kernelmanager.KernelManagerActivity;
 
 public class KamisStuffFragment extends PreferenceFragment {
 
     private static final String KEY_CORE_CONTROL = "core_control";
     private static final String KEY_BYPASS_CHARGE = "bypass_charge";
     private static final String KEY_ZRAM = "zram";
+    private static final String KEY_KERNEL_MANAGER = "kernel_manager";
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -60,6 +62,16 @@ public class KamisStuffFragment extends PreferenceFragment {
         if (zramPref != null) {
             zramPref.setOnPreferenceClickListener(preference -> {
                 Intent intent = new Intent(getActivity(), ZramActivity.class);
+                startActivity(intent);
+                return true;
+            });
+        }
+        
+        // Kernel Manager preference
+        Preference kernelManagerPref = findPreference(KEY_KERNEL_MANAGER);
+        if (kernelManagerPref != null) {
+            kernelManagerPref.setOnPreferenceClickListener(preference -> {
+                Intent intent = new Intent(getActivity(), KernelManagerActivity.class);
                 startActivity(intent);
                 return true;
             });
