@@ -47,7 +47,6 @@ lib_fixups: lib_fixups_user_type = {
     ): lib_fixup_vendor_suffix,
     (
         'libagmclient',
-        'libagmmixer',
         'libwifi-hal-ctrl',
         'libpalclient',
         'vendor.qti.hardware.pal@1.0-impl',
