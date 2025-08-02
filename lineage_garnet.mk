@@ -32,3 +32,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := Redmi/garnet_global/garnet:13/SKQ1.230401.001/V14.0.9.0.TNRMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+TARGET_ENABLE_BLUR := true
