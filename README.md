@@ -2,7 +2,7 @@
 
 Redmi Note 13 Pro 5G (codenamed _"garnet"_) is a high-end, mid-range smartphone from Xiaomi.
 
-It was announced & released in September 2024.
+It was announced & released in September 2023.
 
 ## Device specifications
 
