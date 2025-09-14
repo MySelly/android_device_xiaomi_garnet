@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Termal profiller -->
+    <string name="thermal_title">Termal profiller</string>
+    <string name="thermal_summary">Uygulamaya özel termal profilleri en iyi performans için ayarla</string>
+    <string name="thermal_default">Optimizasyon yok</string>
+    <string name="thermal_benchmark">Performans</string>
+    <string name="thermal_browser">Tarayıcı</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Telefon</string>
+    <string name="thermal_gaming">Oyun</string>
+    <string name="thermal_navigation">Navigasyon</string>
+    <string name="thermal_streaming">Yayın</string>
+    <string name="thermal_video">Video</string>
+
+    <!-- Uygulama bazlı yenileme hızı -->
+    <string name="refresh_title">Uygulamaya özel yenileme hızı</string>
+    <string name="refresh_summary">Belirli bir uygulama için maksimum yenileme hızını ayarla</string>
+    <string name="refresh_default">Varsayılan</string>
+    <string name="refresh_standard">60Hz</string>
+    <string name="refresh_extreme">120Hz</string>
+    <string name="refresh_land">Yatay modda 60Hz</string>    
+
+    <!-- Doze -->
+    <string name="doze_brightness_low">Düşük parlaklık</string>
+    <string name="doze_brightness_high">Yüksek parlaklık</string>
+    <string name="doze_brightness_adaptive">Uyarlanabilir parlaklık</string>
+    <string name="doze_brightness_title">Doze parlaklık seviyesi</string>
+    <string name="doze_brightness_summary">Doze bildirim ekranının parlaklık seviyesi (izin verilen maksimumun yüzdesi)</string>
+
+    <!-- Hoparlör temizleme -->
+   <string name="clear_speaker_title">Hoparlörü temizle</string>
+   <string name="clear_speaker_summary">Hoparlörü temizlemek için 30 saniyelik ses çal</string>
+   <string name="clear_speaker_description">Hoparlörün hafif şekilde tozla tıkandığını fark ederseniz bu özelliği bir veya iki kez çalıştırın. Medya ses seviyesini en yükseğe ayarlayın.\n\nHoparlör çok tıkalıysa, cihazı hoparlör aşağı bakacak şekilde sallarken bu özelliği 2-5 kez çalıştırın.</string>
+   
+    <!-- Yüksek parlaklık modu -->
+    <string name="hbm_fragment_title">Yüksek parlaklık modu</string>
+    <string name="hbm_fragment_summary">HBM ayarları</string>
+    <string name="hbm_mode_title">HBM</string>
+    <string name="hbm_mode_summary">Maksimum parlaklığı etkinleştir</string>
+    <string name="auto_hbm_title">Otomatik HBM</string>
+    <string name="auto_hbm_summary">Güneş ışığına göre maksimum parlaklığı etkinleştir</string>
+    <string name="auto_hbm_threshold_summary">eşik (lux)</string>
+    <string name="hbm_disable_time_summary">devre dışı bırakma gecikmesi (saniye)</string>
+    <string name="hbm_mode_warning">Yüksek parlaklık modunun uzun süreli kullanımı ekranınıza zarar verebilir</string>
+    
+    <!-- DC karartma -->
+    <string name="dc_dimming_enable_title">DC Karartma</string>
+    <string name="dc_dimming_enable_summary">Düşük ışık koşullarında göz yorgunluğunu azaltır</string>
+    <string name="dc_dimming_enable_summary_not_supported">DC Karartma şu anda çekirdek tarafından desteklenmiyor</string>
+
+    <!-- Yüksek dokunma hassasiyeti -->
+    <string name="htsr_title">Dokunma duyarlılığı</string>
+    <string name="htsr_enable_title">Dokunma duyarlılığını artır</string>
+    <string name="htsr_enable_summary">Gecikmeyi azaltmak için dokunma tarama hızını artırır</string>
+    <string name="htsr_enable_summary_not_supported">Dokunma duyarlılığı artırma şu anda çekirdek tarafından desteklenmiyor</string>
+
+    <!-- ZRAM Ayarları -->
+    <string name="zram_size_title">ZRAM boyutu</string>
+    <string name="zram_size_summary">ZRAM takas boyutunu yapılandır</string>
+    <string name="zram_disabled">Devre dışı</string>
+    <string name="zram_size_dynamic">Dinamik (varsayılan)</string>
+    <string name="zram_size_2gb">2GB</string>
+    <string name="zram_size_4gb">4GB</string>
+    <string name="zram_size_8gb">8GB</string>
+    <string name="zram_summary">Uygulanacak ZRAM ayarını seçin</string>
+    <string name="zram_change_applied">ZRAM ayarı kaydedildi (yeniden başlatma sonrası uygulanacak)</string>
+    <string name="zram_reboot_recommended">Değişikliklerin etkili olması için cihazınızı yeniden başlatın</string>
+    <string name="zram_compression_title">Sıkıştırma algoritması</string>
+    <string name="zram_compression_summary">ZRAM sıkıştırma algoritmasını seçin</string>
+    <string name="swappiness_title">Swappiness</string>
+    <string name="swappiness_summary">Çekirdeğin bellek sayfalarını ne kadar agresif şekilde takasa attığını ayarla (varsayılan: 60)</string>
+    <string name="zram_change_failed">ZRAM ayarları uygulanamadı</string>
+    <string name="advanced_settings">Gelişmiş ayarlar</string>
+
+    <!-- Şarj atlama -->
+    <string name="charge_bypass_title">Şarj atlama</string>
+    <string name="charge_bypass_summary">Bataryayı devre dışı bırakarak doğrudan şarjı etkinleştir</string>
+    <string name="charge_bypass_warning">Uyarı: Şarj atlama cihaz sıcaklığını artırabilir veya bataryaya zarar verebilir. Dikkatli kullanın.</string>
+    <string name="charge_bypass_unavailable">Şarj atlama bu cihazda desteklenmiyor</string>
+
+    <!-- Çekirdek kontrolü -->
+    <string name="core_control_title">Çekirdek kontrolü</string>
+    <string name="core_control_summary">Tek tek CPU çekirdeklerini manuel olarak etkinleştir veya devre dışı bırak</string>
+    <string name="core_control_description">Gelişmiş CPU kontrolü. Çekirdekleri kapatmak pil veya ısı yükünü azaltabilir, ancak performans ve kararlılığı etkileyebilir.\n\nEn az iki küçük çekirdek her zaman açık kalmalıdır.</string>
+
+    <!-- Kernel Yöneticisi -->
+    <string name="kernel_manager_title">Çekirdek Yöneticisi</string>
+    <string name="kernel_manager_summary">CPU frekanslarını ve governor ayarlarını yönet</string>
+    <string name="cpu_governor_title">CPU Yöneticisi</string>
+    <string name="cpu_governor_summary">Geçerli: %s</string>
+    <string name="cpu_min_freq_title">Minimum frekans</string>
+    <string name="cpu_max_freq_title">Maksimum frekans</string>
+    <string name="efficiency_cluster_title">Verimlilik kümesi</string>
+    <string name="performance_cluster_title">Performans kümesi</string>
+    <string name="prime_cluster_title">Ana küme</string>
+    <string name="kernel_info_category">Bilgi</string>
+    <string name="kernel_info_title">Çekirdek Yöneticisi hakkında</string>
+    <string name="kernel_info_summary">Tüm CPU kümeleri için governor ve frekans ölçeklendirmesini yönetin. Değişiklikler performans ve pil ömrünü etkileyebilir.</string>
+    <string name="apply_settings">Ayarları uygula</string>
+    <string name="reset_settings">Varsayılanlara sıfırla</string>
+    <string name="settings_applied">Ayarlar başarıyla uygulandı</string>
+    <string name="settings_reset">Ayarlar varsayılana sıfırlandı</string>
+
+    <!-- GPU Yöneticisi -->
+    <string name="gpu_manager_title">GPU Yöneticisi</string>
+    <string name="gpu_manager_summary">GPU frekanslarını ve güç ayarlarını yönet</string>
+    <string name="gpu_governor_title">GPU Yöneticisi</string>
+    <string name="gpu_governor_summary">Geçerli: %s</string>
+    <string name="gpu_freq_title">GPU Frekansları</string>
+    <string name="gpu_min_freq_title">Minimum frekans</string>
+    <string name="gpu_max_freq_title">Maksimum frekans</string>
+    <string name="gpu_current_freq_title">Geçerli frekans</string>
+    <string name="gpu_power_title">Güç ayarları</string>
+    <string name="gpu_force_clk_on_title">Saat açık kalsın</string>
+    <string name="gpu_force_bus_on_title">Veriyolu açık kalsın</string>
+    <string name="gpu_force_rail_on_title">Güç hattı açık kalsın</string>
+    <string name="gpu_force_no_nap_title">Uyku devre dışı</string>
+    <string name="gpu_bus_split_title">Veriyolu bölme</string>
+    <string name="gpu_thermal_title">Termal ayarlar</string>
+    <string name="gpu_temp_title">GPU sıcaklığı</string>
+    <string name="gpu_info_title">GPU bilgisi</string>
+    <string name="gpu_model_title">GPU modeli</string>
+    <string name="gpu_busy_percentage_title">GPU yükü</string>
+    <string name="gpu_reset_count_title">Sıfırlama sayısı</string>
+    <string name="gpu_preempt_count_title">Öncelik sayısı</string>
+
+    <!-- Dirac -->
+    <string name="dirac_title">Xiaomi Dirac | Ses iyileştirici</string>
+    <string name="dirac_summary">Ses kalitesini optimize et</string>
+    <string name="dirac_enable">Xiaomi Dirac’i etkinleştir</string>
+    <string name="dirac_preset_title">Ses profili</string>
+
+    <!-- Hi-Fi -->
+    <string name="dirac_hifi_title">Hi-Fi</string>
+    <string name="dirac_hifi_summary">Gürültüyü ve bozulmayı azaltır, ses kalitesini artırır</string>
+
+    <!-- Ekolayzır -->
+    <string name="dirac_preset_default">Varsayılan</string>
+    <string name="dirac_preset_rock">Rock</string>
+    <string name="dirac_preset_jazz">Jazz</string>
+    <string name="dirac_preset_pop">Pop</string>
+    <string name="dirac_preset_classical">Klasik</string>
+    <string name="dirac_preset_hiphop">Hip Hop</string>
+    <string name="dirac_preset_blues">Blues</string>
+    <string name="dirac_preset_electronic">Elektronik</string>
+    <string name="dirac_preset_country">Country</string>
+    <string name="dirac_preset_dance">Dans</string>
+    <string name="dirac_preset_metal">Metal</string>
+    <string name="dirac_preset_live">Canlı</string>
+    <string name="dirac_preset_balanced">Dengeli</string>
+    <string name="dirac_preset_bass_reduction">Bas azaltma</string>
+    <string name="dirac_preset_bass_booster">Bas güçlendirme</string>
+    <string name="dirac_preset_treble_reduction">Tiz azaltma</string>
+    <string name="dirac_preset_soft_bass">Yumuşak bas</string>
+    <string name="dirac_preset_soft_treble">Yumuşak tiz</string>
+
+    <!-- Senaryo seçimi -->
+    <string name="music_headset_scenario_select">Senaryo seç</string>
+    <string name="music_headset_scenario_intelligent">Akıllı</string>
+    <string name="music_headset_scenario_music">Müzik</string>
+    <string name="music_headset_scenario_video">Video</string>
+    <string name="music_headset_scenario_vocal">Ses</string>
+
+</resources>
